@@ -1,91 +1,89 @@
 <link rel="stylesheet" type="text/css" href="resume.css">
 
 <h1 class="name">Phạm Tiến Thuận</h1>
-<div class="apply_for">Applying for: DevOps Engineer</div>
+<div class="apply_for">DevOps Engineer</div>
 <div class="contact-info">
-  Phone: 0375556882 | 
+  Phone: 0375556882 |
   Email: <a href="mailto:tienthuan05082002@gmail.com">tienthuan05082002@gmail.com</a> |
-  LinkedIn: <a href="https://www.linkedin.com/in/tienthuan05082002">linkedin.com/in/tienthuan05082002</a> |
-  Date of Birth: 05/08/2002
+  LinkedIn: <a href="https://www.linkedin.com/in/tienthuan05082002">linkedin.com/in/tienthuan05082002</a>
 </div>
 
-## Objective
-As a DevOps Engineer, I aim to use my skills in CI/CD, containerization, automation, and operations to improve software development processes. I seek to join a team where I can apply modern DevOps and Ops tools to enhance software delivery and infrastructure management.
+## Professional Summary
 
-## Skills
+DevOps Engineer with strong expertise in Kubernetes, CI/CD, and Baremetal infrastructure. Certified Kubernetes Administrator (CKA) with hands-on experience in implementing and managing enterprise-grade infrastructure. Passionate about Infrastructure as Code and automation.
 
-**Dev Skills:**
+## Technical Skills
 
-- Strong in Data Structures, Object-Oriented Programming (OOP)
-- **CI/CD**: Experienced in Continuous Integration/Continuous Deployment using Jenkins and GitLab.
-- **GitOps**: Experienced in GitOps practices using tools like ArgoCD for continuous deployment and infrastructure management.
-- **IaC (Infrastructure as Code)**: Familiar with Ansible and scripting for infrastructure automation.
-- **Containerization & Orchestration**: Experienced with Docker and Kubernetes.
-- **Web server**: Nginx
-- **Framework**: Spring Boot
-- **Programming Languages:**: Python, Go, Bash, Java, Kotlin
+**Infrastructure & Platform:**
 
-**Ops Skills:**
+- **Containerization**: Docker, Kubernetes (CKA Certified), Helm
+- **Infrastructure**: Experienced in Baremetal setup and management, Kubernetes cluster administration
+- **Web Infrastructure**: Nginx, HAProxy for load balancing and reverse proxy
+- **Message Queue**: RabbitMQ with High Availability cluster configuration
 
-- **Logging & Monitoring**: Knowledgeable in ELK stack, Prometheus, and Grafana.
-- **Automation Tools**: Experience with GitLab, Jenkins, ArgoCd and Helm.
+**DevOps & Automation:**
+
+- **CI/CD**: Jenkins, GitLab CI, ArgoCD
+- **Version Control**: GitLab, GitHub, BitBucket
+- **IaC & Configuration**: Ansible, Custom automation scripts
+- **Monitoring & Observability**: ELK Stack, Prometheus, Grafana
+
+**Programming:**
+
+- **Languages**: Python, Go, Bash, Java, Kotlin
+- **Frameworks**: Spring Boot
 
 **Databases:**
 
-- MySQL, MongoDB
+- MySQL, MongoDB (HA Configuration)
 
-## Experience
+## Professional Experience
 
-**DevOps Engineer (Full-time)**
-  Minh Phúc Transformation, 07/2024 - Present
+**DevOps Engineer** | Minh Phúc Transformation | 07/2024 - Present
 
-  - Developed and maintained **Helm** Charts for projects.
-  - Implemented, built, and optimized **CI/CD** pipelines using **Jenkins** and **Bitbucket**.
-  - Deployed project to UAT environment using **Kubernetes**, **ArgoCD**, **Helm**, **CI/CD**.
-  - Utilized Rancher for project deployment management.
+- Architected and maintained production Kubernetes clusters on Baremetal infrastructure
+- Implemented GitOps workflow using ArgoCD and Helm for automated application deployment
+- Optimized Jenkins deployment by standardizing Freestyle projects and implementing Jenkins Job Builder for template-based job management
+- Reduced CI/CD pipeline creation time through reusable job templates and automated configuration
+- Established comprehensive monitoring using ELK Stack for logs and Prometheus-Grafana for metrics
+- Set up and managed Harbor registry for secure container management
+- Automated infrastructure provisioning and configuration using IaC principles
 
-**Android Developer (Full-time)**
-  Apero Technologies Group, 01/2024 - 06/2024
+**Android Developer** | Apero Technologies Group | 01/2024 - 06/2024
 
-  - Developed Android applications following **Agile** Scrum methodologies.
-  - Utilized modern Android technologies to enhance app development.
-  - Optimized application size for better performance.
+- Developed Android applications following Agile methodologies
+- Built and maintained CI/CD pipelines for application deployment
+- Collaborated with team members to implement new features and optimize app performance
 
-**Android Developer (Part-time)**
-  Keego Mobile, 06/2022 - 11/2023
+**Android Developer** | Keego Mobile | 06/2022 - 11/2023
 
-  - Planned and developed Android applications for Play Store release.
-  - Applied modern Android technologies in app development.
-  - Researched and implemented sound modification solutions for the Voice Changer app.
-  - Solo projects: Voice Changer, Screen Mirroring.
-  - Supported the Volume Booster project.
+- Developed and published multiple Android applications to Play Store
+- Managed complete application lifecycle from design to deployment
 
-## Self Project
+## Self Projects
 
-**Ecommerce:**
+**Ecommerce Infrastructure Project**
 
-- Built infrastructure on BareMetal using **Kubernetes (kubeadm)**, **ArgoCD**, **Harbor (registry)**, **GitLab**, **Helm**, and more (Local CA, Sornar,...).
-- Automated infrastructure deployment with **IaC**.
-- Built DevSecOps Pipeline with SonarQube for SAST and Trivy for container security
-- Focused on **CI/CD**, **DevSecOps**, and building infrastructure
+- Designed and implemented complete Baremetal Kubernetes infrastructure using kubeadm
+- Integrated GitLab, Harbor registry, and ArgoCD for end-to-end CI/CD
+- Built comprehensive monitoring and alerting system
+- Configured and managed RabbitMQ HA cluster for reliable message queuing
+- Implemented security practices with SonarQube (SAST) and Trivy for container scanning
+- Set up Local CA for internal certificate management
 
-**Vmctl (IAC):**
+**Infrastructure Automation Tool (Vmctl):**
 
-- Developed scripting solutions similar to Ansible for managing Linux virtual machines with **Lima**.
+- Developed custom IaC tool for Linux VM management
+- Implemented template-based configuration management
+- Integrated with Lima for local development environments
 
-**Todo List:**
+## Certifications
 
-- Built infrastructure on BareMetal using Kubernetes(K3S), Distribution (registry), Helm, and Skaffold.
-- Used ELK Stack, Prometheus, and Grafana for **Logging & Monitoring**.
-- Focused on learning HA MongoDB, building ELK Stack, Prometheus, and Grafana.
+- Certified Kubernetes Administrator (CKA) | 2025
 
 ## Education
 
-**Posts and Telecommunications Institute of Technology (Ha Noi) - PTIT** :
+**Posts and Telecommunications Institute of Technology (PTIT)** | 2020 - 2025
 
-- Information Technology Major, 2020 - 2025 (4.5-year program)
-- GPA: 3.25
-
-## Awards and Honors
-
-- 2022: Samsung Algorithm Certificate
+- B.S. in Information Technology
+- GPA: 3.26

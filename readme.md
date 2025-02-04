@@ -1,52 +1,109 @@
-## Tutorial: Exporting Markdown to PDF
+# My Resume
 
-In this tutorial, we will walk through the steps to export a Markdown file to a PDF document. This can be useful for sharing your Markdown content in a more universally accessible format.
+This repository contains my professional resume in Markdown format with CSS styling.
 
-### Prerequisites
+## TL;DR
 
-- A Markdown file that you want to convert to PDF.
-- A Markdown editor or a command-line tool that supports PDF export.
+```bash
+pandoc resume.md -s -c resume.css -o resume.html && wkhtmltopdf --enable-local-file-access --margin-top 10mm --margin-bottom 10mm --margin-left 10mm --margin-right 10mm --page-size A4 resume.html resume.pdf
+```
 
-### Using Markdown Editors
+## How to Export Resume to PDF
 
-Many Markdown editors have built-in support for exporting to PDF. Here are a few popular ones:
+There are several methods to export the resume to PDF while preserving CSS styling:
 
-1. **Typora**
-   - Open your Markdown file in Typora.
-   - Go to `File` > `Export` > `PDF`.
-   - Choose the destination and save the PDF file.
+### Method 1: Using wkhtmltopdf (Recommended)
 
-2. **Visual Studio Code with Markdown PDF Extension**
-   - Install the `Markdown PDF` extension from the VS Code marketplace.
-   - Open your Markdown file in VS Code.
-   - Press `Ctrl+Shift+P` to open the command palette.
-   - Type `Markdown PDF: Export (pdf)` and press Enter.
-   - The PDF will be generated and saved in the same directory as your Markdown file.
+This method provides the best CSS support and rendering quality.
 
-### Using Command-Line Tools
+1. **Install wkhtmltopdf**
+   ```bash
+   # On macOS
+   brew install wkhtmltopdf
 
-If you prefer using the command line, there are several tools available:
+   # On Ubuntu/Debian
+   sudo apt-get install wkhtmltopdf
 
-1. **Pandoc**
-   - Install Pandoc from [pandoc.org](https://pandoc.org/installing.html).
-   - Run the following command in your terminal:
-     ```
-     pandoc yourfile.md -o output.pdf
-     ```
-   - Replace `yourfile.md` with the name of your Markdown file and `output.pdf` with the desired name of the PDF file.
+   # On Windows
+   # Download installer from https://wkhtmltopdf.org/downloads.html
+   ```
 
-2. **Markdown-pdf (Node.js)**
-   - Install Node.js from [nodejs.org](https://nodejs.org/).
-   - Install the `markdown-pdf` package globally:
-     ```
-     npm install -g markdown-pdf
-     ```
-   - Run the following command in your terminal:
-     ```
-     markdown-pdf yourfile.md
-     ```
-   - The PDF will be generated and saved in the same directory as your Markdown file.
+2. **Convert Markdown to HTML with CSS**
+   ```bash
+   pandoc resume.md -s -c resume.css -o resume.html
+   ```
 
-### Conclusion
+3. **Convert HTML to PDF**
+   ```bash
+   wkhtmltopdf --enable-local-file-access resume.html resume.pdf
+   ```
 
-Exporting Markdown to PDF is a straightforward process with the right tools. Whether you prefer using a graphical editor or the command line, there are multiple options available to suit your workflow. Choose the method that works best for you and start sharing your Markdown content in PDF format!
+4. **One-line command combining steps 2 and 3**
+   ```bash
+   pandoc resume.md -s -c resume.css -o resume.html && wkhtmltopdf --enable-local-file-access resume.html resume.pdf
+   ```
+
+#### Additional wkhtmltopdf Options
+
+You can customize the PDF output with various options:
+```bash
+wkhtmltopdf \
+  --enable-local-file-access \
+  --margin-top 10mm \
+  --margin-bottom 10mm \
+  --margin-left 10mm \
+  --margin-right 10mm \
+  --page-size A4 \
+  resume.html resume.pdf
+```
+
+### Method 2: Using Pandoc with LaTeX
+
+This method is an alternative if wkhtmltopdf is not available, but CSS support might be limited.
+
+```bash
+pandoc resume.md -c resume.css -s -o resume.pdf --pdf-engine=xelatex -V mainfont="Arial Unicode MS" -V geometry:margin=1in
+```
+
+### Method 3: Using Browser
+
+1. Open `resume.html` in a web browser
+2. Press `Cmd/Ctrl + P` to open Print dialog
+3. Select "Save as PDF"
+4. Adjust margins and other settings as needed
+
+### Quick Build Command
+
+One-line command to build the resume with proper formatting:
+```bash
+pandoc resume.md -s -c resume.css -o resume.html && wkhtmltopdf --enable-local-file-access --margin-top 10mm --margin-bottom 10mm --margin-left 10mm --margin-right 10mm --page-size A4 resume.html resume.pdf
+```
+
+To make it easier to use, you can add an alias to your shell config (`.zshrc` or `.bashrc`):
+```bash
+alias build-resume='pandoc resume.md -s -c resume.css -o resume.html && wkhtmltopdf --enable-local-file-access --margin-top 10mm --margin-bottom 10mm --margin-left 10mm --margin-right 10mm --page-size A4 resume.html resume.pdf'
+```
+
+Then simply run:
+```bash
+build-resume
+```
+
+## File Structure
+
+- `resume.md` - Resume content in Markdown format
+- `resume.css` - CSS styling for the resume
+- `resume.html` - Generated HTML file (intermediate)
+- `resume.pdf` - Final PDF output
+
+## Customization
+
+- Edit `resume.md` to update the content
+- Modify `resume.css` to change the styling
+- Use the export methods above to generate updated PDF
+
+## Notes
+
+- The CSS file includes both screen and print media styles
+- wkhtmltopdf method provides the best support for CSS features
+- Make sure to have all required fonts installed when using the LaTeX method
