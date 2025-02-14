@@ -80,6 +80,7 @@ DevOps Engineer with strong expertise in Kubernetes, CI/CD, and Baremetal infras
 ## Certifications
 
 - Certified Kubernetes Administrator (CKA) | 2025
+- TOEIC 650 | 2025
 
 ## Education
 
