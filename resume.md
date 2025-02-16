@@ -85,7 +85,6 @@ DevOps Engineer with strong expertise in Kubernetes, CI/CD, and Baremetal infras
 ## Volunteer Experience
 
 - **Member** | Programming Club PTIT (Proptit) | 2020 - Present
-- **Training Department Member** | Programming Club PTIT (Proptit) | 2021 - 2023
 
 ## Education
 
