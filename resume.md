@@ -82,6 +82,11 @@ DevOps Engineer with strong expertise in Kubernetes, CI/CD, and Baremetal infras
 - [Certified Kubernetes Administrator (CKA)](https://ti-user-certificates.s3.amazonaws.com/e0df7fbf-a057-42af-8a1f-590912be5460/38693654-d148-44db-9443-427d604a4a73-phm-tin-thun-5a6fa8b2-c5a8-4fea-bf22-767986b24dd6-certificate.pdf) | 2025
 - TOEIC 650 | 2025
 
+## Volunteer Experience
+
+- **Member**| Programming Club PTIT (Proptit) | 2020 - Present
+- **Training Department Member** | Programming Club PTIT (Proptit) | 2021 - 2023
+
 ## Education
 
 **Posts and Telecommunications Institute of Technology (PTIT)** | 2020
