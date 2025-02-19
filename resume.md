@@ -90,6 +90,6 @@ DevOps Engineer with strong expertise in Kubernetes, CI/CD, and Baremetal infras
 
 **Posts and Telecommunications Institute of Technology (PTIT)** | 2020
 
-- Expected to graduate in 08/2025
+- Expected to graduate in 05/2025
 - B.S. in Information Technology
 - GPA: 3.26
