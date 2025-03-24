@@ -8,9 +8,9 @@
   LinkedIn: <a href="https://www.linkedin.com/in/tienthuan05082002">linkedin.com/in/tienthuan05082002</a>
 </div>
 
-## Tóm Tắt Chuyên Môn
+## Tổng Quan
 
-Kỹ sư DevOps với chuyên môn mạnh mẽ về Kubernetes, CI/CD và hạ tầng Baremetal. Chứng chỉ Certified Kubernetes Administrator (CKA) với kinh nghiệm thực tế trong việc triển khai và quản lý cơ sở hạ tầng cấp doanh nghiệp. Đam mê về Infrastructure as Code và tự động hóa.
+Tôi là Kỹ sư DevOps với chuyên môn về Kubernetes, CI/CD và hạ tầng Baremetal. Chứng chỉ Certified Kubernetes Administrator (CKA) với kinh nghiệm thực tế trong việc triển khai và quản lý cơ sở hạ tầng cấp doanh nghiệp. Đam mê về Infrastructure as Code và tự động hóa.
 
 ## Kỹ Năng Chuyên Môn
 
